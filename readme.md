@@ -1,54 +1,29 @@
 ### Imitation Learning Hello World
 
+Imitation learning is supervised learning where data comes as expert demonstration. The expert can be a human or ony other agent. Input data is referred to as "state" and output data as "action." In discrete action spaces, it resembles classification; in continuous action spaces, it is regression.
 
-### Collecting human demonstration using MC environment
+Policy $\pi: S \rightarrow A$ is the function/model that takes a state as input and outputs an action. The goal of imitation learning is to learn a policy that mimics the expert's behavior.
 
-```bash
-pip install gym==0.26.2
-pip install readchar
-``` 
+Behavioral Cloning (BC) is offline imitation learning that use only the collected demonstrations and doesn't use simulator during learning. 
 
-<img src="imgs/human_mc.png" width=60%>
+This tutorial is educational purpose, so code isn't optimized for production but easy to understand. We will walk through following experiments.
 
-
-### Mountain Car
-Continuous state and discrete action.
-
-* Step 1: Data Collection (Human Expert)
-``` 
-python collect_human_mc.py --n 10
-```
-
-* Step 2: Train the model & Evaluate
-```
-# Scikit-learn Model
-bc_mc_sklearn.ipynb
-
-# Pytorch Model
-bc_mc_torch.ipynb
-```
-
-### Pendulum
-Both state and action are continuous.
-
-* Step 1: Data Collection (RL demonstration)
-```
-TODO: RL policy, expert data in expert_data/
-```
-
-* Step 2: Train the model & Evaluate
-```
-# Scikit-learn Model
-bc_pendulum_sklearn.ipynb
-
-# Pytorch Model with MSE loss
-bc_pendulum_torch.ipynb
-
-# Pytorch Model (Gaussian Actor) with MLE loss
-bc_pendulum_torch_gaussian.ipynb
-```
+* Discrete action space (MC)
+* Continuous action space (Pendulum)
+* Continuous action space (MuJoCo)
+* Robomimic simulator
+* Sawyer robot.
+ 
+### Table of Contents
+|  Env   |   Task   |  Action Space  |  Expert  |  Colab  |
+|--------|----------|------------------------|----------|---------|
+| Gym     | Mountain Car | Discrete | Human | train_sk, train_torch | 
+| Gym | Pendulum | Continuous | RL | train_sk, train_torch | 
+| Gym     | Car Racing | Continuous | Human | train|
+| MuJoCo | Ant | Continuous | RL | train |
+| MuJoCo | HalfCheetah | Continuous | RL | train |
+| Sawyer | Block | Continuous | Human | train |
 
 
-### MuJoCo Tasks {Ant, HalfCheetah, Hopper, Humanoid, Walker2d}
-Both state and action are continuous.
+
 
