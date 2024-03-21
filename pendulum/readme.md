@@ -4,23 +4,28 @@ Both state and action space are continuous.
 TODO: add figure.
 
 #### Data Collection
-* Skip if you want to use the given expert data.
+Skip if you want to use the given expert data.
 
+* Install stable-baselines3
 ```
-    # install stable-baseline-3
+    pip install stable-baselines3[extra]
 ```
+* Generate data: <a href="data_gen_pendulum.ipynb"> data_gen_pendulum.ipynb </a>
 
 
-### Train policy
+### Train Regression policy
+* predict action directly from state
+* MSE loss
+Using Scikit-learn :  <a href="bc_pendulum_sklearn.ipynb"> bc_pendulum_sklearn.ipynb </a> </br>
+ Using Pytorch : <a href="bc_pendulum_torch.ipynb">bc_pendulum_torch.ipynb</a> 
+ 
 
-* Step 2: Train the model & Evaluate
-```
-# Scikit-learn Model
-bc_pendulum_sklearn.ipynb
+TODO: add figure for both policy.
 
-# Pytorch Model with MSE loss
-bc_pendulum_torch.ipynb
+### Train gaussian policy
+* predict mean and variance
+* Negative log likelihood loss
 
-# Pytorch Model (Gaussian Actor) with MLE loss
-bc_pendulum_torch_gaussian.ipynb
+<a href="bc_pendulum_torch_gaussian.ipynb"> bc_pendulum_torch_gaussian.ipynb </a>
+
 
