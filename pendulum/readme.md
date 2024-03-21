@@ -1,10 +1,17 @@
 ### Pendulum
-Both state and action are continuous.
+Both state and action space are continuous.
 
-* Step 1: Data Collection (RL demonstration)
+TODO: add figure.
+
+#### Data Collection
+* Skip if you want to use the given expert data.
+
 ```
-TODO: RL policy, expert data in expert_data/
+    # install stable-baseline-3
 ```
+
+
+### Train policy
 
 * Step 2: Train the model & Evaluate
 ```
@@ -16,3 +23,4 @@ bc_pendulum_torch.ipynb
 
 # Pytorch Model (Gaussian Actor) with MLE loss
 bc_pendulum_torch_gaussian.ipynb
+
