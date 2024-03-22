@@ -12,8 +12,9 @@ This tutorial is educational purpose, so code isn't optimized for production but
 |--------|--------------|--------------|----------------|----------|---------|
 | Gym    | Mountain Car | Continuous(2)   | Discrete(3)       | Human    | train_sk, train_torch |
 | Gym    | Pendulum     | Continuous(3)   | Continuous(1)     | RL       | train_sk, train_torch |
-<!-- | Gym    | Car Racing   | Continuous   | Continuous     | Human    | train   | -->
 | MuJoCo | Ant          | Continuous(111)   | Continuous(8)     | RL       | train   |
 <!-- | MuJoCo | HalfCheetah  | Continuous(17)   | Continuous(6)     | RL       | train   | -->
+<!-- | MuJoCo | Humanoid  | Continuous(376)   | Continuous(17)     | RL       | train   | -->
 <!-- | Robomimic | Lift      | Image,Low-dim   | Continuous     | Human    | train   |
 | Sawyer | Block        | Image,Low-dim   | Continuous     | Human    | train   | -->
+<!-- | Gym    | Car Racing   | Continuous   | Continuous     | Human    | train   | -->
