@@ -12,7 +12,7 @@ Follow this [link](https://robomimic.github.io/docs/introduction/installation.ht
 
 
 ### Training policy 
-* BC:  <a href="train_lift.ipynb"> train_lift.ipynb </a>
+* BC:  <a href="train_minimal_lift.ipynb"> train_minimal_lift.ipynb </a>
 
 
 
