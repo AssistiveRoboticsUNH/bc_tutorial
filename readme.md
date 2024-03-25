@@ -16,13 +16,14 @@ We will walk through following experiments.
 |--------|--------------|--------------|----------------|----------|---------|
 | Gym    | Mountain Car | Continuous(2)   | Discrete(3)       | Human    | toadd |
 | Gym    | Pendulum     | Continuous(3)   | Continuous(1)     | RL       | toadd |
+| Gym    | Car Racing   | Image(96x96x3)   | Continuous(3)     | Human    | toadd  |
 | MuJoCo | Ant          | Continuous(111)   | Continuous(8)     | RL       | toadd   |
 | Robomimic | Lift      | Low-dim(19)   | Continuous(7)     | Human    | toadd   |
+
 
 <!-- | MuJoCo | HalfCheetah  | Continuous(17)   | Continuous(6)     | RL       | train   | -->
 <!-- | MuJoCo | Humanoid  | Continuous(376)   | Continuous(17)     | RL       | train   | -->
 <!-- | Sawyer | Block        | Image,Low-dim   | Continuous     | Human    | train   | -->  
-<!-- | Gym    | Car Racing   | Continuous   | Continuous     | Human    | train   | -->
 
 ### Data format
 * We will use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
