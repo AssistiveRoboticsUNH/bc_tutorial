@@ -6,17 +6,26 @@ Policy $\pi: S \rightarrow A$ is the function/model that takes a state as input 
 
 Behavioral Cloning (BC) is offline imitation learning that use only the collected demonstrations and doesn't use simulator during learning. 
 
-This tutorial is educational purpose, so code isn't optimized for production but easy to understand. We will walk through following experiments.
+* This tutorial is educational purpose, so code isn't optimized for production but easy to understand. 
+* Each policy training is done in a single jupyter notebook.
+* Each directory contain a readme file.
 
+
+We will walk through following experiments. 
 |  Env   |   Task       |  State Space |  Action Space  |  Expert  |  Colab  |
 |--------|--------------|--------------|----------------|----------|---------|
-| Gym    | Mountain Car | Continuous(2)   | Discrete(3)       | Human    | train_sk, train_torch |
-| Gym    | Pendulum     | Continuous(3)   | Continuous(1)     | RL       | train_sk, train_torch |
-| MuJoCo | Ant          | Continuous(111)   | Continuous(8)     | RL       | train   |
-| Robomimic | Lift      | Low-dim(19)   | Continuous(7)     | Human    | train   |
+| Gym    | Mountain Car | Continuous(2)   | Discrete(3)       | Human    | toadd |
+| Gym    | Pendulum     | Continuous(3)   | Continuous(1)     | RL       | toadd |
+| MuJoCo | Ant          | Continuous(111)   | Continuous(8)     | RL       | toadd   |
+| Robomimic | Lift      | Low-dim(19)   | Continuous(7)     | Human    | toadd   |
 
 <!-- | MuJoCo | HalfCheetah  | Continuous(17)   | Continuous(6)     | RL       | train   | -->
 <!-- | MuJoCo | Humanoid  | Continuous(376)   | Continuous(17)     | RL       | train   | -->
-
-<!-- | Sawyer | Block        | Image,Low-dim   | Continuous     | Human    | train   | --> -->
+<!-- | Sawyer | Block        | Image,Low-dim   | Continuous     | Human    | train   | -->  
 <!-- | Gym    | Car Racing   | Continuous   | Continuous     | Human    | train   | -->
+
+### Data format
+* We will use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
+* For rest of the environment we will store as *.pkl file with the following structure.
+
+*.pkl structure we are going to use.
