@@ -1,4 +1,4 @@
-### Imitation Learning Hello World (in progress)
+### Imitation Learning Hello World (dev in progress)
 
 Imitation learning is supervised learning where data comes as expert demonstration. The expert can be a human or any other agent. Input data is referred to as "state" and output data as "action." In discrete action spaces, it resembles classification; in continuous action spaces, it is regression.
 
@@ -31,8 +31,30 @@ We will walk through following experiments.
 
 *.pkl structure we are going to use.
 
+### Installation
+```bash
+    pip install gym==0.26.2
+    pip install readchar
+    pip install imageio
+    pip install -U scikit-learn
+```
+* Install PyTorch https://pytorch.org/get-started/locally/
 
 ### Demos
-<img src="carracing.gif" width=200> 
 
-<img src="lift.gif" width=200>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;">
+    <figure>
+        <img src="media/carracing.gif" width="200" height="180"  >
+        <figcaption>CarRacing-v2</figcaption>
+    </figure>
+    <figure>
+        <img src="media/ant.gif" width="200" height="180" />
+        <figcaption>Ant</figcaption>
+    </figure>
+    <figure>
+        <img src="media/lift.gif" width="200" height="180" />
+        <figcaption>Robosuite Lift</figcaption>
+    </figure>
+</div>
+
+
