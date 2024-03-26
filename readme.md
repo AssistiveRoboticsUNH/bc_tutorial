@@ -44,15 +44,15 @@ We will walk through following experiments.
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;">
     <figure>
-        <img src="media/carracing.gif" width="200" height="180"  >  </br>
+        <img src="media/carracing.gif" width="200" height="180"  >
         <figcaption>CarRacing-v2</figcaption>
     </figure>
     <figure>
-        <img src="media/ant.gif" width="200" height="180" />  </br>
+        <img src="media/ant.gif" width="200" height="180" />
         <figcaption>Ant</figcaption>
     </figure>
     <figure>
-        <img src="media/lift.gif" width="200" height="180" /> </br>
+        <img src="media/lift.gif" width="200" height="180" /> 
         <figcaption>Robosuite Lift</figcaption>
     </figure>
 </div>
