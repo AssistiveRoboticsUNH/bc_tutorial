@@ -39,14 +39,24 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 
 ### Demos
   
- 
+<!--  
 | Videos | Task          | State Space    | Action Space  | Expert | Colab |
 |--------|---------------|----------------|---------------|--------|-------|
 |  ![Mountain Car](media/mc.gif) | MountainCar-v0 | Continuous(2)  | Discrete(3)   | Human  | toadd |
 |  ![Pendulum](media/pendulum.gif)    | Pendulum-v1     | Continuous(3)  | Continuous(1) | RL     | toadd |
 | ![CarRacing](media/carracing.gif) | CarRacing-v2   | Image(96x96x3) | Continuous(3) | Human  | toadd |
 |     ![Ant](media/ant.gif)    | Ant-v3          | Continuous(111)| Continuous(8) | RL     | toadd |
-|      ![Robosuite Lift](media/lift.gif)                              | Lift         | Low-dim(19)   | Continuous(7) | Human  | toadd |
+|      ![Robosuite Lift](media/lift.gif)                              | Lift         | Low-dim(19)   | Continuous(7) | Human  | toadd | -->
+
+
+| Videos | Task | State Space | Action Space | Expert | Colab |
+|--------|------|-------------|--------------|--------|-------|
+| <img src="media/mc.gif" width="200"/> | MountainCar-v0 | Continuous(2) | Discrete(3) | Human | toadd |
+| <img src="media/pendulum.gif" width="200"/> | Pendulum-v1 | Continuous(3) | Continuous(1) | RL | toadd |
+| <img src="media/carracing.gif" width="200"/> | CarRacing-v2 | Image(96x96x3) | Continuous(3) | Human | toadd |
+| <img src="media/ant.gif" width="200"/> | Ant-v3 | Continuous(111) | Continuous(8) | RL | toadd |
+| <img src="media/lift.gif" width="200"/> | Lift | Low-dim(19) | Continuous(7) | Human | toadd |
+
 
 
 ### Data format
