@@ -8,48 +8,21 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 
 * This tutorial is educational purpose, so code isn't optimized for production but easy to understand. 
 * Each policy training is done in a single jupyter notebook.
-* Each directory contain a readme file.
+* Each directory contains a readme file.
 
-
-<!-- We will walk through following experiments. 
-|  Env   |   Task       |  State Space |  Action Space  |  Expert  |  Colab  |
-|--------|--------------|--------------|----------------|----------|---------|
-| Gym    | Mountain Car | Continuous(2)   | Discrete(3)       | Human    | toadd |
-| Gym    | Pendulum     | Continuous(3)   | Continuous(1)     | RL       | toadd |
-| Gym    | Car Racing   | Image(96x96x3)   | Continuous(3)     | Human    | toadd  |
-| MuJoCo | Ant          | Continuous(111)   | Continuous(8)     | RL       | toadd   |
-| Robomimic | Lift      | Low-dim(19)   | Continuous(7)     | Human    | toadd   |
- -->
-
-
-
-<!-- | MuJoCo | HalfCheetah  | Continuous(17)   | Continuous(6)     | RL       | train   | -->
-<!-- | MuJoCo | Humanoid  | Continuous(376)   | Continuous(17)     | RL       | train   | -->
-<!-- | Sawyer | Block        | Image,Low-dim   | Continuous     | Human    | train   | -->  
-
-
-### Installation
+ 
+<!-- ### Installation
 ```bash
     pip install gym==0.26.2
     pip install readchar
     pip install imageio
     pip install -U scikit-learn
 ```
-* Install PyTorch https://pytorch.org/get-started/locally/
+* Install PyTorch https://pytorch.org/get-started/locally/ -->
 
 ### Demos
-  
-<!--  
-| Videos | Task          | State Space    | Action Space  | Expert | Colab |
-|--------|---------------|----------------|---------------|--------|-------|
-|  ![Mountain Car](media/mc.gif) | MountainCar-v0 | Continuous(2)  | Discrete(3)   | Human  | toadd |
-|  ![Pendulum](media/pendulum.gif)    | Pendulum-v1     | Continuous(3)  | Continuous(1) | RL     | toadd |
-| ![CarRacing](media/carracing.gif) | CarRacing-v2   | Image(96x96x3) | Continuous(3) | Human  | toadd |
-|     ![Ant](media/ant.gif)    | Ant-v3          | Continuous(111)| Continuous(8) | RL     | toadd |
-|      ![Robosuite Lift](media/lift.gif)                              | Lift         | Low-dim(19)   | Continuous(7) | Human  | toadd | -->
-
-
-| Videos | Task | State Space | Action Space | Expert | Colab |
+ 
+| Video | Task | State Space | Action Space | Expert | Colab |
 |--------|------|-------------|--------------|--------|-------|
 | <img src="media/mc.gif" width="150"/> | MountainCar-v0 | Continuous(2) | Discrete(3) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/mountain_car/bc_mc_torch.ipynb) |
 | <img src="media/pendulum.gif" width="150"/> | Pendulum-v1 | Continuous(3) | Continuous(1) | RL | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb) |
