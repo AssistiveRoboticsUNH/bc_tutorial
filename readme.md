@@ -30,6 +30,12 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 | <img src="media/ant.gif" width="150"/> | Ant-v3 | Continuous(111) | Continuous(8) | RL | toadd |
 | <img src="media/lift.gif" width="150"/> | Lift | Low-dim(19) | Continuous(7) | Human | toadd |
 
+### Quick start
+* use the "Open In Colab" links above to run the code in colab.
+
+### Install locally to collect data on your own
+* please see the readme file in each directory for installation and data collection instructions.
+
 
 ### Data format
 * We use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
