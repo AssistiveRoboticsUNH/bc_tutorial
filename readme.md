@@ -52,7 +52,7 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 | Videos | Task | State Space | Action Space | Expert | Colab |
 |--------|------|-------------|--------------|--------|-------|
 | <img src="media/mc.gif" width="150"/> | MountainCar-v0 | Continuous(2) | Discrete(3) | Human | toadd |
-| <img src="media/pendulum.gif" width="150"/> | Pendulum-v1 | Continuous(3) | Continuous(1) | RL | toadd |
+| <img src="media/pendulum.gif" width="150"/> | Pendulum-v1 | Continuous(3) | Continuous(1) | RL | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb) |
 | <img src="media/carracing.gif" width="150"/> | CarRacing-v2 | Image(96x96x3) | Continuous(3) | Human | toadd |
 | <img src="media/ant.gif" width="150"/> | Ant-v3 | Continuous(111) | Continuous(8) | RL | toadd |
 | <img src="media/lift.gif" width="150"/> | Lift | Low-dim(19) | Continuous(7) | Human | toadd |

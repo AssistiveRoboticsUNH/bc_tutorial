@@ -1,7 +1,7 @@
 ### Pendulum
 Both state and action space are continuous.
 
-TODO: add figure.
+<!-- TODO: add figure. -->
 
 #### Data Collection
 Skip if you want to use the given expert data.
@@ -20,7 +20,14 @@ Using Scikit-learn :  <a href="bc_pendulum_sklearn.ipynb"> bc_pendulum_sklearn.i
  Using Pytorch : <a href="bc_pendulum_torch.ipynb">bc_pendulum_torch.ipynb</a> 
  
 
-TODO: add figure for both policy.
+### run pytorch training on pendulum in colab
+<a target="_blank" href="https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
+
+<!-- TODO: add figure for both policy. -->
 
 ### Train gaussian policy
 * predict mean and variance
@@ -29,9 +36,5 @@ TODO: add figure for both policy.
 <a href="bc_pendulum_torch_gaussian.ipynb"> bc_pendulum_torch_gaussian.ipynb </a>
 
 
-### run pendulum in colab
-<a target="_blank" href="https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
 
 
