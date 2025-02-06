@@ -1,4 +1,4 @@
-### Imitation Learning Hello World (dev in progress)
+### Hello World in Imitation Learning 
 
 Imitation learning is supervised learning where data comes as expert demonstration. The expert can be a human or any other agent. Input data is referred to as "state" and output data as "action." In discrete action spaces, it resembles classification; in continuous action spaces, it is regression.
 
@@ -59,7 +59,6 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 
 
 ### Data format
-* We will use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
-* For rest of the environment we will store as *.pkl file with the following structure.
+* We use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
+* For rest of the environment we store as *.pkl file.
 
-*.pkl structure we are going to use.
