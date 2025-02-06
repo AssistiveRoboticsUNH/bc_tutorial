@@ -51,13 +51,13 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 
 | Videos | Task | State Space | Action Space | Expert | Colab |
 |--------|------|-------------|--------------|--------|-------|
-| <img src="media/mc.gif" width="150"/> | MountainCar-v0 | Continuous(2) | Discrete(3) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main//mountain_car/bc_mc_torch.ipynb) |
+| <img src="media/mc.gif" width="150"/> | MountainCar-v0 | Continuous(2) | Discrete(3) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/mountain_car/bc_mc_torch.ipynb) |
 | <img src="media/pendulum.gif" width="150"/> | Pendulum-v1 | Continuous(3) | Continuous(1) | RL | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb) |
-| <img src="media/carracing.gif" width="150"/> | CarRacing-v2 | Image(96x96x3) | Continuous(3) | Human | toadd |
+| <img src="media/carracing.gif" width="150"/> | CarRacing-v2 | Image(96x96x3) | Continuous(3) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/car_racing/bc_carracing.ipynb) |
 | <img src="media/ant.gif" width="150"/> | Ant-v3 | Continuous(111) | Continuous(8) | RL | toadd |
 | <img src="media/lift.gif" width="150"/> | Lift | Low-dim(19) | Continuous(7) | Human | toadd |
 
- 
+
 ### Data format
 * We will use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
 * For rest of the environment we will store as *.pkl file with the following structure.
