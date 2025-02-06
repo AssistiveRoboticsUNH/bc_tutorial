@@ -49,3 +49,10 @@ From this data we are interested in
 
 ### Collecting human demonstration.
 We will see how we can collect demonstration using keyboard. TODO: to be added.
+
+
+### run minimal lift in colab
+<a target="_blank" href="https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/robomimic/train_minimal_lift.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+

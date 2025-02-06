@@ -29,3 +29,9 @@ TODO: add figure for both policy.
 <a href="bc_pendulum_torch_gaussian.ipynb"> bc_pendulum_torch_gaussian.ipynb </a>
 
 
+### run pendulum in colab
+<a target="_blank" href="https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+
