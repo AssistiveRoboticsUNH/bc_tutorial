@@ -27,8 +27,8 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 | <img src="media/mc.gif" width="150"/> | [MountainCar-v0](mountain_car) | Continuous(2) | Discrete(3) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/mountain_car/bc_mc_torch.ipynb) |
 | <img src="media/pendulum.gif" width="150"/> | [Pendulum-v1](pendulum) | Continuous(3) | Continuous(1) | RL | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/pendulum/bc_pendulum_torch.ipynb) |
 | <img src="media/carracing.gif" width="150"/> | [CarRacing-v2](car_racing) | Image(96x96x3) | Continuous(3) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/car_racing/bc_carracing.ipynb) |
-| <img src="media/ant.gif" width="150"/> | [Ant-v3](mujoco) | Continuous(111) | Continuous(8) | RL | toadd |
-| <img src="media/lift.gif" width="150"/> | [Lift](robomimic_tasks) | Low-dim(19) | Continuous(7) | Human | toadd |
+| <img src="media/ant.gif" width="150"/> | [Ant-v3](mujoco_tasks) | Continuous(111) | Continuous(8) | RL | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/mujoco_tasks/bc_Ant-v3.ipynb) |
+| <img src="media/lift.gif" width="150"/> | [Lift](robomimic_tasks) | Low-dim(19) | Continuous(7) | Human | [Open In Colab](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/robomimic_tasks/train_lift_minimal.ipynb) |
 
 ### Quick start
 * use the "Open In Colab" links above to run the code in colab.
