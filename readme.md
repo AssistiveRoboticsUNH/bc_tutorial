@@ -43,3 +43,8 @@ Behavioral Cloning (BC) is offline imitation learning that use only the collecte
 * We use hdf5 file for robomimic (see the 'readme.md' in robomimic directory to understand the data format) and real robot.
 * For rest of the environment we store as *.pkl file.
 
+
+### Collecting demonstrations
+
+* Please see the respective folders (e.g. robomimic_tasks) for data collection instructions.
+
