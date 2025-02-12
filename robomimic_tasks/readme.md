@@ -60,6 +60,7 @@ Note: for inormation only. Robosuite internally save the data to /tmp folder and
 #### Step 2: convert data to robomimic format using robomimic codebase
 ```bash
    cd  robomimic/robomimic/scripts/conversion
+   conda activate robomimic_venv
    python convert_robosuite.py --dataset  demo_file_path.hdf5
 ```
 * Change the "demo_file_path.hdf5" with your hdf5 file accordingly.
@@ -67,6 +68,7 @@ Note: for inormation only. Robosuite internally save the data to /tmp folder and
 #### Step 3: Generate image observation data using robomimic codebase
 ```bash
    cd  robomimic/robomimic/scripts/
+   conda activate robomimic_venv
    python dataset_states_to_obs.py --dataset demo_file_path.hdf5 \
                                  --output_name output_filepath.hdf5\
                                  --done_mode 2 --camera_names agentview robot0_eye_in_hand --camera_height 84 --camera_width 84  
@@ -77,6 +79,8 @@ Note: for inormation only. Robosuite internally save the data to /tmp folder and
 #### Step 4: (Optional) create videos from *.hdf5 using this codebase.
  
 ```bash
+   cd bc_tutorial/robomimic_tasks
+   conda activate robomimic_venv
    python hdf52videos.py --dataset demo_image_filepath.hdf5 
 ```
 The videos will be saved inside "videos" folder in the same directory where the hdf5 file is located.
