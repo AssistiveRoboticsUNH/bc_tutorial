@@ -2,7 +2,7 @@
 In this tutorial we will show a minimilastic example of training policy. For official robomimic tutorial please refer to [robomimic tutorial](https://robomimic.github.io/docs/introduction/overview.html)
 
 
-### Installation
+### 1. Installation
 The following commands are taken from this [link](https://robomimic.github.io/docs/introduction/installation.html) 
 
 ```
@@ -34,13 +34,13 @@ pip install -r requirements.txt
 
 
 
-### Download data
+### 2. Download data
 * For quick start download Proficient-Human low-dimensional lift data from here [link](https://robomimic.github.io/docs/datasets/robomimic_v0.1.html)
 
 * direct link to download [Proficient-Human low-dimensional lift data](http://downloads.cs.stanford.edu/downloads/rt_benchmark/lift/ph/low_dim_v141.hdf5) save as to download, click may not work.
 
 
-### Understanding Robomimic data
+### 3. Understanding Robomimic data
 
 * The data is stored in hdf5 format. The structure is as follows:
 ```
@@ -71,12 +71,12 @@ From this data we are interested in
 * See the <a href="data_info.ipynb">data_info.ipynb</a> file to understand the data structure.
 
 
-### Training policy 
+### 4. Training policy 
 * BC:  <a href="train_minimal_lift.ipynb"> train_minimal_lift.ipynb </a>
 
 
 
-### Collecting human demonstration.
+### 5. Collecting human demonstration.
 
 #### Step 1: give demonstration using robosuite codebase
 ```
