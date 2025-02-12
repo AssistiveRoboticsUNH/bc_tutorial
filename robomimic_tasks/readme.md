@@ -3,7 +3,36 @@ In this tutorial we will show a minimilastic example of training policy. For off
 
 
 ### Installation
-Follow this [link](https://robomimic.github.io/docs/introduction/installation.html) to install robomimic and robosuite simulator.
+The following commands are taken from this [link](https://robomimic.github.io/docs/introduction/installation.html) 
+
+```
+conda create -n robomimic_venv python=3.8.0
+conda activate robomimic_venv
+```
+
+Install PyTorch
+* Install from here https://pytorch.org/get-started/locally/
+
+
+Install robomimic
+```
+cd <PATH_TO_YOUR_INSTALL_DIRECTORY>
+git clone https://github.com/ARISE-Initiative/robomimic.git
+cd robomimic
+pip install -e .
+```
+
+Install robosuite (Use from source installation, don't use pip install robosuite)
+```
+cd <PATH_TO_INSTALL_DIR>
+git clone https://github.com/ARISE-Initiative/robosuite.git
+cd robosuite
+git checkout v1.4.1
+
+pip install -r requirements.txt
+```
+
+
 
 ### Download data
 * For quick start download Proficient-Human low-dimensional lift data from here [link](https://robomimic.github.io/docs/datasets/robomimic_v0.1.html)
@@ -48,4 +77,46 @@ From this data we are interested in
 
 
 ### Collecting human demonstration.
-We will see how we can collect demonstration using keyboard. TODO: to be added.
+
+#### Step 1: give demonstration using robosuite codebase
+```
+cd robosuite/robosuite/scripts
+conda activate robomimic_venv
+python collect_human_demonstrations.py
+```
+
+Press CTRL+C when you are done giving demonstrations. 
+The data will be saved in the robosuite/robosuite/models/assets/demonstrations folder. Remember the filepath in your computer, that should be similar to the following file path.
+```
+/home/ns/robosuite/robosuite/models/assets/demonstrations/1739396875_9637682/demo.hdf5
+```
+
+
+Note: for inormation only. Robosuite internally save the data to /tmp folder and then create demo.hdf5 file in the above folder. So, we don't need to look at the /tmp folder.
+
+#### Step 2: convert data to robomimic format using robomimic codebase
+```bash
+   cd  robomimic/robomimic/scripts/conversion
+   python convert_robosuite.py --dataset  demo_file_path.hdf5
+```
+* Change the "demo_file_path.hdf5" with your hdf5 file accordingly.
+
+#### Step 3: Generate image observation data using robomimic codebase
+```bash
+   cd  robomimic/robomimic/scripts/
+   python dataset_states_to_obs.py --dataset demo_file_path.hdf5 \
+                                 --output_name output_filepath.hdf5\
+                                 --done_mode 2 --camera_names agentview robot0_eye_in_hand --camera_height 84 --camera_width 84  
+```
+* Note: change the dataset path and the output path accordingly.
+
+
+#### Step 4: (Optional) create videos from *.hdf5 using this codebase.
+ 
+```bash
+   python hdf52videos.py --dataset demo_image_filepath.hdf5 
+```
+The videos will be saved inside "videos" folder in the same directory where the hdf5 file is located.
+
+
+
