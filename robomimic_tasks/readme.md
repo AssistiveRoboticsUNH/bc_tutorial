@@ -133,3 +133,18 @@ For general training policy, plese see   robomimic/robomimic/scripts/train.py  a
 * Download Proficient-Human low-dimensional lift data from here [link](https://robomimic.github.io/docs/datasets/robomimic_v0.1.html)
 
 * direct link to download [Proficient-Human low-dimensional lift data](http://downloads.cs.stanford.edu/downloads/rt_benchmark/lift/ph/low_dim_v141.hdf5) save as to download, click may not work. -->
+
+### Common Trouble shooting
+
+
+```bash
+sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf
+
+conda install -c conda-forge glew
+conda install -c conda-forge mesalib
+conda install -c menpo glfw3
+ 
+
+```
+
+You can also try to install in the "base" environment instead of "robomimic_venv" environment. 
