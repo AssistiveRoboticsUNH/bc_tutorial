@@ -54,11 +54,7 @@ Press CTRL+C when you are done giving demonstrations.
 The data will be saved in the robosuite/robosuite/models/assets/demonstrations folder. Remember the filepath in your computer, that should be similar to the following file path.
 ```
 /home/ns/robosuite/robosuite/models/assets/demonstrations/1739396875_9637682/demo.hdf5
-```
-
-
-Note: for inormation only. Robosuite internally save the data to /tmp folder and then create demo.hdf5 file in the above folder. So, we don't need to look at the /tmp folder.
-
+```  
 
 <b>Option 2:</b> Collect data using Spacemouse.
 Pleasee [see](spacemouse_install.md) for installation instruction.
