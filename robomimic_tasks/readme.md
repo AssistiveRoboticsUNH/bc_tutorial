@@ -42,6 +42,8 @@ pip install -r requirements.txt
 ### 2. Collecting human demonstration.
 
 #### Step 1: give demonstration using robosuite codebase
+
+<b>Option 1:</b> Collect data using keyboard
 ```
 cd robosuite/robosuite/scripts
 conda activate robomimic_venv
@@ -56,6 +58,18 @@ The data will be saved in the robosuite/robosuite/models/assets/demonstrations f
 
 
 Note: for inormation only. Robosuite internally save the data to /tmp folder and then create demo.hdf5 file in the above folder. So, we don't need to look at the /tmp folder.
+
+
+<b>Option 2:</b> Collect data using Spacemouse.
+Pleasee [see](spacemouse_install.md) for installation instruction.
+
+Then run 
+```
+cd robosuite/robosuite/scripts
+conda activate robomimic_venv
+python collect_human_demonstrations.py --device spacemouse
+```
+
 
 #### Step 2: convert data to robomimic format using robomimic codebase
 ```bash
