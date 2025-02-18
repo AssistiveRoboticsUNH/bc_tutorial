@@ -1,16 +1,18 @@
 Spacemouse requires some installation as described here robosuite/robosuite/devices/spacemouse.py
 
 
+
 ### Step 1: Install the driver
 Download and install driver from https://www.3dconnexion.com/service/drivers.html
 
 ### Step 2: Install hidapi library
+* Make sure you are in correct environment (e.g. robomimic_venv)
 ```bash
 pip install hidapi
 ```
 
-### Step 3: Change the vendor id and product id
-Change the vendor id and product id that correspond to the device. In the robosuite/robosuite/macros.py change the following (use actual id)
+### Step 3: Change the vendor id and product id (default should probably work)
+Change the vendor id and product id that correspond to the device. In the robosuite/robosuite/macros.py change the following (use actual id). 
 ```
    SPACEMOUSE_VENDOR_ID = 9583
    SPACEMOUSE_PRODUCT_ID = 50734
