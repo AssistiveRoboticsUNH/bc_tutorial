@@ -43,6 +43,12 @@ pip install -r requirements.txt
 
 #### Step 1: give demonstration using robosuite codebase
 
+Choose either Option 1 or Option 2 and then press CTRL+C when you are done. The data will be saved in the <u>robosuite/robosuite/models/assets/demonstrations</u> folder. Remember the filepath in your computer, that should be similar to the following file path.
+```
+/home/ns/robosuite/robosuite/models/assets/demonstrations/1739396875_9637682/demo.hdf5
+```  
+
+
 <b>Option 1:</b> Collect data using keyboard
 ```
 cd robosuite/robosuite/scripts
@@ -50,15 +56,8 @@ conda activate robomimic_venv
 python collect_human_demonstrations.py
 ```
 
-Press CTRL+C when you are done giving demonstrations. 
-The data will be saved in the robosuite/robosuite/models/assets/demonstrations folder. Remember the filepath in your computer, that should be similar to the following file path.
-```
-/home/ns/robosuite/robosuite/models/assets/demonstrations/1739396875_9637682/demo.hdf5
-```  
-
 <b>Option 2:</b> Collect data using Spacemouse.
 Pleasee [see](spacemouse_install.md) for installation instruction.
- 
 ```
 cd robosuite/robosuite/scripts
 conda activate robomimic_venv
