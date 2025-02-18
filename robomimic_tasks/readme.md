@@ -58,8 +58,7 @@ The data will be saved in the robosuite/robosuite/models/assets/demonstrations f
 
 <b>Option 2:</b> Collect data using Spacemouse.
 Pleasee [see](spacemouse_install.md) for installation instruction.
-
-Then run 
+ 
 ```
 cd robosuite/robosuite/scripts
 conda activate robomimic_venv
