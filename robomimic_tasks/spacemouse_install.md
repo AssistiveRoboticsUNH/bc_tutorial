@@ -28,12 +28,18 @@ Here, the vendor id is 256f and product id is c62e. Convert the hex to decimal t
 
 
 ### Step 4: Update permission
-```bash
+
 sudo nano /etc/udev/rules.d/99-spacemouse-permissions.rules
+Then add the following lines to the file
+```bash 
 SUBSYSTEM=="usb", ATTR{idVendor}=="256f", ATTR{idProduct}=="c62e", MODE="0666"
 KERNEL=="hidraw", ATTRS{idVendor}=="256f", ATTRS{idProduct}=="c62e", MODE="0666"
+```
 
+Then run the following commands
+```bash
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
+
 
