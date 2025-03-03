@@ -7,6 +7,9 @@ Quick start with minimal implementation, open In Colab [train_lift_minimal.ipynb
 
 
 
+Dagger on Lift task, open In Colab [train_lift_dag.ipynb](https://colab.research.google.com/github/AssistiveRoboticsUNH/bc_tutorial/blob/main/robomimic_tasks/train_lift_dag.ipynb)
+
+
 
 ### 1. Installation
 The following commands are taken from this [link](https://robomimic.github.io/docs/introduction/installation.html) 
